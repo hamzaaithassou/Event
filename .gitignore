@@ -4,6 +4,11 @@ backend/vendor/
 backend/.env
 backend/.env.*
 !backend/.env.example
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
+backend/storage/*
+!backend/storage/.gitignore
+backend/public/storage
 
 # React
 frontend/node_modules/
@@ -12,9 +17,14 @@ frontend/build/
 frontend/.env
 frontend/.env.*
 !frontend/.env.example
+frontend/npm-debug.log
+frontend/yarn-error.log
 
-# VS Code
+# General
 .vscode/
-
-# Windows
+.DS_Store
 Thumbs.db
+
+# Other
+.phpunit.result.cache
+.phpunit.cache
